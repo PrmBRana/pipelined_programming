@@ -28,6 +28,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install cocotb cocotbext-uart
 
+      - name: Cache PDK
+        uses: actions/cache@v4
+        with:
+          path: ~/.volare
+          key: volare-${{ runner.os }}-sky130
+
+      - name: Install LibreLane
+        run: |
+          pip install librelane
+
       - name: Run tests
         run: |
           cd test
