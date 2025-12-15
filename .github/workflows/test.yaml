@@ -23,6 +23,11 @@ jobs:
         shell: bash
         run: pip install -r test/requirements.txt
 
+      - name: Install cocotb dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install cocotb cocotbext-uart
+
       - name: Run tests
         run: |
           cd test
