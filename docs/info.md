@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project included with RISC-V pipeline processor with programming protocol through UART. The UART runs in 115200 baud rate .
 
 ## How to test
 
-Explain how to use your project
+First, upload firmware via UART. Untill programming , It takes time and after uploads, then pipeline stars run.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Control signals, SRAM, connecting cables
